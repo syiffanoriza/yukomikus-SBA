@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/Icon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak SBA</title>
+  <link rel="stylesheet" href="src/app.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</head>
+
+<body class="bg-default">
+  <main>
+    <section>
+      <div class="flex flex-col items-center gap-5 p-10">
+        <h1 class="sr-200 text-2xl uppercase font-bold text-primary-600 text-center">Get in Touch</h1>
+        <p class="sr-200 text-gray-500 text-center">
+          SBA adalah perusahaan supplier/distributor ikan laut dan seafood. Klien kami terdiri atas konsumen skala
+          kecil (rumah tangga), hingga skala besar seperti Rumah Sakit, Hotel, Pabrikan, dan perusahaan Catering. SBA
+          memastikan produk adalah ...
+        </p>
+        <form class="sr-200 p-10 bg-primary-900 rounded-2xl flex flex-col gap-5 w-full" action="">
+          <span class="grid grid-cols-2 gap-5">
+            <input type="text" class="sr-300 p-2 bg-white text-sm rounded-lg" placeholder="Nama">
+            <input type="text" class="sr-300 p-2 bg-white text-sm rounded-lg" placeholder="Kebutuhan">
+            <input type="text" class="sr-300 p-2 bg-white text-sm rounded-lg" placeholder="Email">
+            <input type="text" class="sr-300 p-2 bg-white text-sm rounded-lg" placeholder="Tanggal Pengiriman">
+          </span>
+          <textarea type="text" rows="6" class="sr-300 p-2 bg-white text-sm rounded-lg" placeholder="Keterangan"></textarea>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <img class="w-full" src="img/footer__wave-base.svg" alt="">
+    <div class="p-10 bg-primary-900 flex items-end justify-between text-white">
+      <ul>
+        <li>Contact Us</li>
+        <li>XXX XXXX XXXX</li>
+      </ul>
+      <!-- TODO: Provide Email -->
+      <a href="">email@provider.co.id</a>
+      <ul class="flex gap-2">
+        <li>IG</li>
+        <li>YT</li>
+        <li>TT</li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    ScrollReveal().reveal('.sr-200', { reset: true, delay: 200 })
+    ScrollReveal().reveal('.sr-300', { reset: true, delay: 300 })
+    ScrollReveal().reveal('.sr-400', { reset: true, delay: 400 })
+    ScrollReveal().reveal('.sr-500', { reset: true, delay: 500 })
+  </script>
+</body>
+
+</html>
