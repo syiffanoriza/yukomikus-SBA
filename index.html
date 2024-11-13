@@ -35,15 +35,16 @@
               class="nav-item block py-2 text-white group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Pemesanan</a>
           </li>
           <li class="group">
-            <a href="#produk"
+            <a href="produk.html"
               class="nav-item block py-2 text-white group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Produk</a>
           </li>
           <li class="group">
-            <a href="#kemitraan"
+            <a href="kemitraan.html"
               class="nav-item block py-2 text-white group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Kemitraan</a>
           </li>
           <li class="group">
-            <a href="#"
+            <!-- TODO: ADD HREF -->
+            <a
               class="nav-item block py-2 text-white group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Berita</a>
           </li>
           <li class="group">
@@ -62,7 +63,7 @@
   <main>
     <section id="tentang">
       <div class="flex flex-col items-center md:gap-10 p-10">
-        <h1 class="sr-200 text-2xl uppercase font-bold text-primary-600 text-center">Tentang SBA</h1>
+        <h1 class="sr-200 text-3xl uppercase font-bold text-primary-600 text-center">Tentang SBA</h1>
         <span class="sr-200 flex items-end justify-center overflow-hidden h-52 md:hidden">
           <img src="img/illustration__nelayan.svg" class="w-2/5" alt="">
         </span>
@@ -79,7 +80,7 @@
     </section>
     <section id="produk">
       <div class="flex flex-col items-center gap-10 p-10">
-        <h1 class="sr-200 text-2xl uppercase font-bold text-primary-600 text-center">Produk</h1>
+        <h1 class="sr-200 text-3xl uppercase font-bold text-primary-600 text-center">Produk</h1>
         <div class="grid md:grid-cols-3 grid-cols-2 gap-2">
           <div class="sr-300 max-w-sm bg-primary-900 rounded-lg shadow">
             <a class="block overflow-hidden h-60" href="#">
@@ -117,63 +118,71 @@
             </div>
           </div>
         </div>
-        <a href="produk.html" class="sr-200 text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none uppercase">Pesan Sekarang</a>
+        <a href="produk.html"
+          class="sr-200 text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none uppercase">Pesan
+          Sekarang</a>
       </div>
     </section>
     <section id="kemitraan">
       <div class="flex flex-col items-center gap-5 p-10">
-        <h1 class="sr-200 text-2xl uppercase font-bold text-primary-600 text-center">Kemitraan</h1>
+        <h1 class="sr-200 text-3xl uppercase font-bold text-primary-600 text-center">Kemitraan</h1>
         <span class="flex items-center justify-center relative">
           <img src="img/kemitraan__ikan-lg.svg" class="sr-200 ikan-rotate absolute w-[40vw]" alt="">
           <img src="img/kemitraan__ikan-sm.svg" class="sr-300 ikan-rotate w-[45vw]" alt="">
         </span>
         <p class="sr-200 text-gray-500 text-center md:px-10">
-          SBA adalah perusahaan supplier/distributor ikan laut dan seafood. Klien kami terdiri atas konsumen skala kecil (rumah tangga), hingga skala besar seperti Rumah Sakit, Hotel, Pabrikan, dan perusahaan Catering. SBA memastikan produk adalah ...
+          SBA adalah perusahaan supplier/distributor ikan laut dan seafood. Klien kami terdiri atas konsumen skala kecil
+          (rumah tangga), hingga skala besar seperti Rumah Sakit, Hotel, Pabrikan, dan perusahaan Catering. SBA
+          memastikan produk adalah ...
         </p>
-        <button type="button" class="sr-200 text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none uppercase">Daftar</button>
+        <button type="button"
+          class="sr-200 text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none uppercase">Daftar</button>
       </div>
     </section>
     <section id="pemesanan">
       <div class="flex flex-col items-center gap-10 p-10">
-        <h1 class="sr-200 text-2xl uppercase font-bold text-primary-600 text-center">Prosedur Pemesanan</h1>
-        <dl class="grid grid-cols-2 gap-10">
-          <div class="sr-200 flex items-center gap-4">
-            <img src="img/prosedur__ikan-icon.svg" class="h-16" alt="">
-            <span>
-              <dt class="font-semibold text-2xl text-primary-900">Pilih Produk</dt>
-              <dd class="text-primary-600 text-lg">Lorem Ipsum</dd>
-            </span>
-          </div>
+        <h1 class="sr-200 text-3xl uppercase font-bold text-primary-600 text-center">Prosedur Pemesanan</h1>
+        <dl class="flex flex-col gap-10 w-full p-10">
+          <span class="flex justify-between w-full">
+            <div class="sr-200 w-full flex items-center gap-4">
+              <img src="img/prosedur__ikan-icon.svg" class="w-32" alt="">
+              <span>
+                <dt class="font-semibold text-3xl w-full text-primary-900">Pilih Produk</dt>
+                <dd class="text-primary-600 text-2xl">Lorem Ipsum Dolor Sit Amet</dd>
+              </span>
+            </div>
 
-          <div class="sr-300 flex items-center gap-4">
-            <img src="img/prosedur__pembayaran-icon.svg" class="h-16" alt="">
-            <span>
-              <dt class="font-semibold text-2xl text-primary-900">Pilih Produk</dt>
-              <dd class="text-primary-600 text-lg">Lorem Ipsum</dd>
-            </span>
-          </div>
+            <div class="sr-300 w-full flex items-center gap-4">
+              <img src="img/prosedur__pembayaran-icon.svg" class="w-32" alt="">
+              <span>
+                <dt class="font-semibold text-3xl w-full text-primary-900">Pilih Produk</dt>
+                <dd class="text-primary-600 text-2xl">Lorem Ipsum Dolor Sit Amet</dd>
+              </span>
+            </div>
+          </span>
+          <span class="flex justify-between w-full">
+            <div class="sr-400 w-full flex items-center gap-4">
+              <img src="img/prosedur__form-icon.svg" class="w-32" alt="">
+              <span>
+                <dt class="font-semibold text-3xl w-full text-primary-900">Pilih Produk</dt>
+                <dd class="text-primary-600 text-2xl">Lorem Ipsum Dolor Sit Amet</dd>
+              </span>
+            </div>
 
-          <div class="sr-400 flex items-center gap-4">
-            <img src="img/prosedur__form-icon.svg" class="h-16" alt="">
-            <span>
-              <dt class="font-semibold text-2xl text-primary-900">Pilih Produk</dt>
-              <dd class="text-primary-600 text-lg">Lorem Ipsum</dd>
-            </span>
-          </div>
-
-          <div class="sr-500 flex items-center gap-4">
-            <img src="img/prosedur__pengiriman-icon.svg" class="h-16" alt="">
-            <span>
-              <dt class="font-semibold text-2xl text-primary-900">Pilih Produk</dt>
-              <dd class="text-primary-600 text-lg">Lorem Ipsum</dd>
-            </span>
-          </div>
+            <div class="sr-500 w-full flex items-center gap-4">
+              <img src="img/prosedur__pengiriman-icon.svg" class="w-32" alt="">
+              <span>
+                <dt class="font-semibold text-3xl w-full text-primary-900">Pilih Produk</dt>
+                <dd class="text-primary-600 text-2xl">Lorem Ipsum Dolor Sit Amet</dd>
+              </span>
+            </div>
+          </span>
         </dl>
       </div>
     </section>
   </main>
   <footer>
-    <img class="overflow-hidden w-full" src="img/footer__graphics.svg" alt="">
+    <img class="translate-y-1 overflow-hidden w-full" src="img/footer__graphics-index.png" alt="">
     <div class="p-10 bg-primary-900 flex items-end justify-between text-white">
       <ul>
         <li>Contact Us</li>
@@ -194,7 +203,7 @@
       const navitems = document.getElementsByClassName('nav-item');
       const navbarbtn = document.getElementById('navbar-btn');
 
-      if (window.scrollY > window.innerHeight-200) {
+      if (window.scrollY > window.innerHeight - 200) {
         navbar.classList.add('bg-default');
         navbarbtn.classList.remove('bg-white');
         navbar.classList.add('shadow-lg');
@@ -213,10 +222,11 @@
       }
     });
 
-    ScrollReveal().reveal('.sr-200', {reset: true, delay: 200})
-    ScrollReveal().reveal('.sr-300', {reset: true, delay: 300})
-    ScrollReveal().reveal('.sr-400', {reset: true, delay: 400})
-    ScrollReveal().reveal('.sr-500', {reset: true, delay: 500})
+    ScrollReveal().reveal('.sr-200', { reset: true, delay: 200 })
+    ScrollReveal().reveal('.sr-300', { reset: true, delay: 300 })
+    ScrollReveal().reveal('.sr-400', { reset: true, delay: 400 })
+    ScrollReveal().reveal('.sr-500', { reset: true, delay: 500 })
   </script>
 </body>
+
 </html>
