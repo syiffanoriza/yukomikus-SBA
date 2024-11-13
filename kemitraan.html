@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak SBA</title>
+    <link rel="stylesheet" href="src/app.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</head>
+
+<body class="bg-default">
+    <nav class="fixed top-0 w-full z-10 duration-150 ease-in-out bg-default shadow-lg">
+        <div class="flex flex-wrap items-center justify-end mx-auto py-4 px-6 lg:px-10">
+            <button id="navbar-btn" data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 bg-white rounded-lg md:hidden focus:outline-none duration-150 ease-in-out"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                    <li class="group">
+                        <a href="./#tentang"
+                            class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Tentang</a>
+                    </li>
+                    <li class="group">
+                        <a href="./#pemesanan"
+                            class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Pemesanan</a>
+                    </li>
+                    <li class="group">
+                        <a href="produk.html"
+                            class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Produk</a>
+                    </li>
+                    <li class="group">
+                        <a href="kemitraan.html"
+                            class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Kemitraan</a>
+                    </li>
+                    <li class="group">
+                        <!-- TODO: ADD HREF -->
+                        <a
+                            class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Berita</a>
+                    </li>
+                    <li class="group">
+                        <a href="kontak.html"
+                            class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <span class="block p-5"></span>
+    <main>
+        <section id="kemitraan">
+            <div class="flex flex-col items-center gap-5 p-10">
+                <h1 class="sr-200 text-3xl uppercase font-bold text-primary-600 text-center">Kemitraan</h1>
+                <span class="flex items-center justify-center relative">
+                    <img src="img/kemitraan__ikan-lg.svg" class="sr-200 ikan-rotate absolute w-[40vw]" alt="">
+                    <img src="img/kemitraan__ikan-sm.svg" class="sr-300 ikan-rotate w-[45vw]" alt="">
+                </span>
+                <p class="sr-200 text-gray-500 text-center md:px-10">
+                    SBA adalah perusahaan supplier/distributor ikan laut dan seafood. Klien kami terdiri atas konsumen
+                    skala kecil
+                    (rumah tangga), hingga skala besar seperti Rumah Sakit, Hotel, Pabrikan, dan perusahaan Catering.
+                    SBA
+                    memastikan produk adalah ...
+                </p>
+                <button type="button"
+                    class="sr-200 text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none uppercase">
+                    Download MOU
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img class="w-full translate-y-1" src="img/footer__graphics-kemitraan.png" alt="">
+        <div class="p-10 bg-primary-900 flex items-end justify-between text-white">
+            <ul>
+                <li>Contact Us</li>
+                <li>XXX XXXX XXXX</li>
+            </ul>
+            <!-- TODO: Provide Email -->
+            <a href="">email@provider.co.id</a>
+            <ul class="flex gap-2">
+                <li>IG</li>
+                <li>YT</li>
+                <li>TT</li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        ScrollReveal().reveal('.sr-200', { reset: true, delay: 200 })
+        ScrollReveal().reveal('.sr-300', { reset: true, delay: 300 })
+        ScrollReveal().reveal('.sr-400', { reset: true, delay: 400 })
+        ScrollReveal().reveal('.sr-500', { reset: true, delay: 500 })
+    </script>
+</body>
+
+</html>

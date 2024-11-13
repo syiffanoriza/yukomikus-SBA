@@ -6,12 +6,56 @@
   <link rel="icon" type="image/svg+xml" href="/Icon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Produk SBA</title>
+  <link rel="stylesheet" href="src/app.css">
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-  <link rel="stylesheet" crossorigin href="assets/index-BmHY0jr2.css">
 </head>
 
 <body class="bg-default">
+  <nav class="fixed top-0 w-full z-10 duration-150 ease-in-out bg-default shadow-lg">
+    <div class="flex flex-wrap items-center justify-end mx-auto py-4 px-6 lg:px-10">
+      <button id="navbar-btn" data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 bg-white rounded-lg md:hidden focus:outline-none duration-150 ease-in-out"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+          <li class="group">
+            <a href="./#tentang"
+              class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Tentang</a>
+          </li>
+          <li class="group">
+            <a href="./#pemesanan"
+              class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Pemesanan</a>
+          </li>
+          <li class="group">
+            <a href="produk.html"
+              class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Produk</a>
+          </li>
+          <li class="group">
+            <a href="kemitraan.html"
+              class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Kemitraan</a>
+          </li>
+          <li class="group">
+            <!-- TODO: ADD HREF -->
+            <a
+              class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Berita</a>
+          </li>
+          <li class="group">
+            <a href="kontak.html"
+              class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <span class="block p-5"></span>
   <main>
     <section id="produk">
       <div class="flex flex-col gap-10 p-10">
@@ -19,10 +63,10 @@
           <h1 class="sr-200 text-2xl uppercase font-bold text-primary-600">Pilih Produk</h1>
           <p class="sr-300 text-gray-500">SBA memastikan kesegaran dan kualitas produk. Pilih produk sesuai kebutuhan Anda.</p>
           <br>
-          <button type="button"
+          <a href="/"
             class="sr-200 text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none uppercase">
             Kembali ke Beranda
-          </button>
+          </a>
         </span>
         <div class="grid md:grid-cols-3 grid-cols-2 gap-5">
           <div class="max-w-sm flex flex-col gap-5">
@@ -237,7 +281,7 @@
     </section>
   </main>
   <footer>
-    <img class="w-full" src="img/footer__wave-base.svg" alt="">
+    <img class="w-full translate-y-1" src="img/footer__wave-base.svg" alt="">
     <div class="p-10 bg-primary-900 flex items-end justify-between text-white">
       <ul>
         <li>Contact Us</li>
