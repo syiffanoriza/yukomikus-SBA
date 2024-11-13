@@ -127,8 +127,8 @@
       <div class="flex flex-col items-center gap-5 p-10">
         <h1 class="sr-200 text-3xl uppercase font-bold text-primary-600 text-center">Kemitraan</h1>
         <span class="flex items-center justify-center relative">
-          <img src="img/kemitraan__ikan-lg.svg" class="sr-200 ikan-rotate absolute w-[40vw]" alt="">
-          <img src="img/kemitraan__ikan-sm.svg" class="sr-300 ikan-rotate w-[45vw]" alt="">
+          <img src="img/kemitraan__ikan-lg.svg" id="ikan-lg" class="sr-200 fx-ikan-rotate absolute w-[40vw]" alt="">
+          <img src="img/kemitraan__ikan-sm.svg" id="ikan-sm" class="w-[45vw] opacity-0 duration-200 ease-in-out" alt="">
         </span>
         <p class="sr-200 text-gray-500 text-center md:px-10">
           SBA adalah perusahaan supplier/distributor ikan laut dan seafood. Klien kami terdiri atas konsumen skala kecil
@@ -222,10 +222,18 @@
       }
     });
 
-    ScrollReveal().reveal('.sr-200', { reset: true, delay: 200 })
-    ScrollReveal().reveal('.sr-300', { reset: true, delay: 300 })
-    ScrollReveal().reveal('.sr-400', { reset: true, delay: 400 })
-    ScrollReveal().reveal('.sr-500', { reset: true, delay: 500 })
+    const ikan_lg = document.getElementById('ikan-lg');
+    const ikan_sm = document.getElementById('ikan-sm');
+
+    ikan_lg.addEventListener('animationend', () => {
+      ikan_sm.classList.add('opacity-100');
+      ikan_sm.classList.add('fx-ikan-fadein');
+    });
+
+    ScrollReveal().reveal('.sr-200', { delay: 200 })
+    ScrollReveal().reveal('.sr-300', { delay: 300 })
+    ScrollReveal().reveal('.sr-400', { delay: 400 })
+    ScrollReveal().reveal('.sr-500', { delay: 500 })
   </script>
 </body>
 

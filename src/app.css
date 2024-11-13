@@ -3,9 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.ikan-rotate {
-  -webkit-animation: rotate-center 8s ease-in-out infinite both;
-  animation: rotate-center 8s ease-in-out infinite both;
+.fx-ikan-rotate {
+  -webkit-animation: rotate-center 4s ease-in-out;
+  animation: rotate-center 4s ease-in-out;
+}
+
+.fx-ikan-fadein {
+	-webkit-animation: fade-in 0.5s ease-in-out both;
+  animation: fade-in 0.5s ease-in-out both;
 }
 
 .fx-hover {
@@ -34,6 +39,23 @@
   100% {
     -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
