@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berita SBA</title>
+    <link rel="stylesheet" href="src/app.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</head>
+
+<body class="bg-default">
+    <nav class="fixed top-0 w-full z-10 duration-150 ease-in-out bg-default shadow-lg">
+        <div class="flex flex-wrap items-center justify-end mx-auto py-4 px-6 lg:px-10">
+            <button id="navbar-btn" data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-primary-900 rounded-lg md:hidden focus:bg-primary-200 focus:outline-none duration-150 ease-in-out"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                    <li class="group">
+                        <a href="./#tentang"
+                            class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Tentang</a>
+                    </li>
+                    <li class="group">
+                        <a href="./#pemesanan"
+                            class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Pemesanan</a>
+                    </li>
+                    <li class="group">
+                        <a href="produk.html"
+                            class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Produk</a>
+                    </li>
+                    <li class="group">
+                        <a href="kemitraan.html"
+                            class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Kemitraan</a>
+                    </li>
+                    <li class="group">
+                        <a href="berita.html"
+                            class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Berita</a>
+                    </li>
+                    <li class="group">
+                        <a href="kontak.html"
+                            class="block py-2 text-primary-900 group-hover:text-primary-300 md:p-0 duration-100 ease-in-out">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <span class="block p-5"></span>
+    <header>
+        <div class="flex flex-col gap-10 p-10">
+            <span class="p-14">
+                <h1 class="sr-200 text-4xl uppercase font-bold text-primary-900 text-center">Berita Terkini</h1>
+                <p class="sr-200 text-lg text-primary-700 text-center">
+                    Dapatkan Informasi Terbaru
+                </p>
+            </span>
+            <hr class="border-primary-900">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="flex flex-col items-center gap-12 p-10">
+                <article class="flex flex-col md:flex-row md:gap-12 gap-10">
+                    <span class="sr-200 flex items-center md:w-2/5 md:h-60 h-40 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1532015917327-c7c46aa1d930?q=80&w=1753&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </span>
+                    <div class="flex flex-col md:w-3/5 gap-2 ">
+                        <h2 class="sr-200 text-2xl font-bold">Article Title</h2>
+                        <span class="sr-300 text-sm text-gray-500">Admin | XX Bulan XXXX</span>
+                        <p class="sr-400">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aut? Nihil,
+                            blanditiis ipsam alias non minima corrupti. Hic minus sequi aliquam temporibus, omnis
+                            qui alias velit magni ea, delectus tempore?
+                        </p>
+                        <!-- TODO: ADD HREF -->
+                        <a
+                            class="sr-200 cursor-pointer w-fit mt-5 md:mt-auto text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none uppercase">
+                            Read More
+                        </a>
+                    </div>
+                </article>
+                <article class="flex flex-col md:flex-row md:gap-12 gap-10">
+                    <span class="sr-200 flex items-center md:w-2/5 md:h-60 h-40 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1532015917327-c7c46aa1d930?q=80&w=1753&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </span>
+                    <div class="flex flex-col md:w-3/5 gap-2">
+                        <h2 class="sr-200 text-2xl font-bold">Article Title</h2>
+                        <span class="sr-300 text-sm text-gray-500">Admin | XX Bulan XXXX</span>
+                        <p class="sr-400">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aut? Nihil,
+                            blanditiis ipsam alias non minima corrupti. Hic minus sequi aliquam temporibus, omnis
+                            qui alias velit magni ea, delectus tempore?
+                        </p>
+                        <!-- TODO: ADD HREF -->
+                        <a
+                            class="sr-200 cursor-pointer w-fit mt-5 md:mt-auto text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none uppercase">
+                            Read More
+                        </a>
+                    </div>
+                </article>
+                <article class="flex flex-col md:flex-row md:gap-12 gap-10">
+                    <span class="sr-200 flex items-center md:w-2/5 md:h-60 h-40 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1532015917327-c7c46aa1d930?q=80&w=1753&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </span>
+                    <div class="flex flex-col md:w-3/5 gap-2">
+                        <h2 class="sr-200 text-2xl font-bold">Article Title</h2>
+                        <span class="sr-300 text-sm text-gray-500">Admin | XX Bulan XXXX</span>
+                        <p class="sr-400">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aut? Nihil,
+                            blanditiis ipsam alias non minima corrupti. Hic minus sequi aliquam temporibus, omnis
+                            qui alias velit magni ea, delectus tempore?
+                        </p>
+                        <!-- TODO: ADD HREF -->
+                        <a
+                            class="sr-200 cursor-pointer w-fit mt-5 md:mt-auto text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none uppercase">
+                            Read More
+                        </a>
+                    </div>
+                </article>
+                <article class="flex flex-col md:flex-row md:gap-12 gap-10">
+                    <span class="sr-200 flex items-center md:w-2/5 md:h-60 h-40 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1532015917327-c7c46aa1d930?q=80&w=1753&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </span>
+                    <div class="flex flex-col md:w-3/5 gap-2">
+                        <h2 class="sr-200 text-2xl font-bold">Article Title</h2>
+                        <span class="sr-300 text-sm text-gray-500">Admin | XX Bulan XXXX</span>
+                        <p class="sr-400">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aut? Nihil,
+                            blanditiis ipsam alias non minima corrupti. Hic minus sequi aliquam temporibus, omnis
+                            qui alias velit magni ea, delectus tempore?
+                        </p>
+                        <!-- TODO: ADD HREF -->
+                        <a
+                            class="sr-200 cursor-pointer w-fit mt-5 md:mt-auto text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none uppercase">
+                            Read More
+                        </a>
+                    </div>
+                </article>
+                <article class="flex flex-col md:flex-row md:gap-12 gap-10">
+                    <span class="sr-200 flex items-center md:w-2/5 md:h-60 h-40 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1532015917327-c7c46aa1d930?q=80&w=1753&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </span>
+                    <div class="flex flex-col md:w-3/5 gap-2">
+                        <h2 class="sr-200 text-2xl font-bold">Article Title</h2>
+                        <span class="sr-300 text-sm text-gray-500">Admin | XX Bulan XXXX</span>
+                        <p class="sr-400">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aut? Nihil,
+                            blanditiis ipsam alias non minima corrupti. Hic minus sequi aliquam temporibus, omnis
+                            qui alias velit magni ea, delectus tempore?
+                        </p>
+                        <!-- TODO: ADD HREF -->
+                        <a
+                            class="sr-200 cursor-pointer w-fit mt-5 md:mt-auto text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none uppercase">
+                            Read More
+                        </a>
+                    </div>
+                </article>
+                <br>
+                <button type="button"
+                    class="sr-200 w-fit text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none uppercase">
+                    Load More
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img class="w-full translate-y-1" src="img/footer__wave-base.svg" alt="">
+        <div class="p-10 bg-primary-900 flex items-end justify-between text-white">
+            <ul>
+                <li>Contact Us</li>
+                <li>XXX XXXX XXXX</li>
+            </ul>
+            <!-- TODO: Provide Email -->
+            <a href="">email@provider.co.id</a>
+            <ul class="flex gap-2">
+                <li>IG</li>
+                <li>YT</li>
+                <li>TT</li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        ScrollReveal().reveal('.sr-200', { delay: 200 })
+        ScrollReveal().reveal('.sr-300', { delay: 300 })
+        ScrollReveal().reveal('.sr-400', { delay: 400 })
+        ScrollReveal().reveal('.sr-500', { delay: 500 })
+    </script>
+</body>
+
+</html>
